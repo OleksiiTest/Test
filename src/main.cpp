@@ -9,9 +9,11 @@ using std::cout;
 //end test
 
 int main() {
-  cout<<LinuxParser::UpTime()<<std::endl;
-  /*
+  //cout<<LinuxParser::UpTime()<<std::endl;
+  
+  //cout<<p.Utilization()<<std::endl;
+  
   System system;
   NCursesDisplay::Display(system);
-  */
+  
 }

@@ -3,12 +3,14 @@
 
 #include <string>
 #include <vector>
+#include <set>
 
 #include "process.h"
 #include "processor.h"
 
 class System {
  public:
+  System();
   Processor& Cpu();                   // TODO: See src/system.cpp
   std::vector<Process>& Processes();  // TODO: See src/system.cpp
   float MemoryUtilization();          // TODO: See src/system.cpp
@@ -22,6 +24,9 @@ class System {
  private:
   Processor cpu_ = {};
   std::vector<Process> processes_ = {};
+  std::set<int> processesId_ = {};
+  std::string os_;
+  std::string kernel_;
 };
 
 #endif

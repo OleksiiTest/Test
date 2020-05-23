@@ -48,6 +48,7 @@ long Jiffies();
 long ActiveJiffies();
 long ActiveJiffies(int pid);
 long IdleJiffies();
+void GetCPUTotalandIdleTime(long& total, long& idle);
 
 // Processes
 std::string Command(int pid);
